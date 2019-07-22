@@ -17,7 +17,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
-        "pvtl/voyager-pages": "^0.2.9",
+        "pvtl/voyager-pages": "dev-master",
         "pvtl/voyager-blog": "^0.2.7",
         "tcg/voyager": "^1.1.8",
         "spatie/laravel-sitemap": "~5.2.0",
@@ -58,5 +58,11 @@
             "@php artisan vendor:publish --provider=Laravel\\Scout\\ScoutServiceProvider",
             "@php artisan vendor:publish --provider=Spatie\\Sitemap\\SitemapServiceProvider --tag=config"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kortic/voyager-page-blocks"
+        }
+    ]
 }
