@@ -11,13 +11,13 @@ $searchController = '\Pvtl\VoyagerFrontend\Http\Controllers\SearchController';
  */
 Route::group(['middleware' => ['web']], function () use ($accountController) {
     Route::group(['namespace' => 'App\Http\Controllers'], function () {
-        Auth::routes();
+//        Auth::routes();
     });
 
     Route::group(['middleware' => 'auth', 'as' => 'voyager-frontend.account'], function () use ($accountController) {
-        Route::get('/account', "$accountController@index");
-        Route::post('/account', "$accountController@updateAccount");
-
+//        Route::get('/account', "$accountController@index");
+//        Route::post('/account', "$accountController@updateAccount");
+//
         /**
          * User impersonation
          */
@@ -43,6 +43,6 @@ Route::group([
 /**
  * Let's get some search going
  */
-Route::get('/search', "$searchController@index")
-    ->middleware(['web'])
-    ->name('voyager-frontend.search');
+//Route::get('/search', "$searchController@index")
+//    ->middleware(['web'])
+//    ->name('voyager-frontend.search');
