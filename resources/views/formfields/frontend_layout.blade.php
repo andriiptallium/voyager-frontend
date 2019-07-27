@@ -3,7 +3,7 @@ $selected_value = (isset($dataTypeContent->{$row->field}) && !is_null(old($row->
 
 ?>
 <select class="form-control select2" name="{{ $row->field }}">
-    @foreach($layouts as $layout)
+    @foreach($dataTypeContent->getLayouts() as $layout)
         <option value="{{ $layout }}"
                 @if ($selected_value === $layout)
                 selected="selected"
