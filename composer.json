@@ -62,7 +62,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/kortic/voyager-page-blocks"
+            "url": "https://github.com/andriiptallium/voyager-page-blocks"
         }
     ]
 }
